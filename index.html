@@ -65,7 +65,7 @@ p{margin:0}
 .hero-meta b{display:block;font-family:var(--f-display);font-weight:400;font-size:var(--s2);letter-spacing:0;color:#fff}
 .price{font-family:var(--f-display);font-size:var(--s3);color:#fff}
 .price small{font-family:var(--f-mono);font-size:var(--s-1);color:#b9c9b4;margin-left:.6rem;letter-spacing:.06em}
-.hero-photo{aspect-ratio:16/8;max-width:100%;border:1px dashed rgba(238,242,234,.35);border-radius:4px;display:grid;place-items:center;text-align:center;padding:1rem;color:#b9c9b4;font-family:var(--f-mono);font-size:var(--s-1)}
+.hero-photo{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;border-radius:4px;background:#1b3024}
 
 section{padding-block:3.5rem}
 section + section{border-top:1px solid var(--line)}
@@ -142,7 +142,7 @@ footer .wrap{padding-block:1.75rem;display:grid;gap:.5rem}
       <div><b>1976</b>mid-century build</div>
     </div>
     <p class="price">$2,995,000 <small>MLS # <span class="ph">[MLS number]</span></small></p>
-    <div class="hero-photo">Hero photo: aerial or drone view showing house, barn and pasture<br>(add once photo rights are confirmed)</div>
+    <img class="hero-photo" src="images/hero-dusk-2400.jpg" srcset="images/hero-dusk-1200.jpg 1200w, images/hero-dusk-2400.jpg 2400w" sizes="(max-width:1080px) 100vw, 1048px" width="2400" height="1200" alt="The house at dusk: warm light in the big front window, a flagstone courtyard, and string lights in the trees against a blue and orange sky.">
   </div>
 </header>
 
