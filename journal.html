@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Journal · 14350 160th Place NE</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: same identity as the property page; a narrow reading column of dated entries, newest first. */
+:root{
+  --bg:#f6f7f3; --surface:#ffffff; --ink:#1d2621; --muted:#5a6660; --line:#d6dbd3;
+  --evergreen:#24402f; --pasture:#7f9a5c; --cedar:#a8643a; --on-dark:#eef2ea;
+  --placeholder:#fff4d6; --placeholder-ink:#7a5a12;
+  --f-display:"Gloock", "Georgia", "Times New Roman", serif;
+  --f-body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --s-1:.8125rem; --s0:1.0625rem; --s1:1.25rem; --s2:1.75rem; --s3:clamp(2.2rem, 6vw, 3.5rem);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121815; --surface:#1a221e; --ink:#e4e9e2; --muted:#9aa69f; --line:#2c3832;
+    --evergreen:#1b3024; --pasture:#9cb877; --cedar:#d08a5c;
+    --placeholder:#3a3118; --placeholder-ink:#f0d48c; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121815; --surface:#1a221e; --ink:#e4e9e2; --muted:#9aa69f; --line:#2c3832;
+  --evergreen:#1b3024; --pasture:#9cb877; --cedar:#d08a5c;
+  --placeholder:#3a3118; --placeholder-ink:#f0d48c; color-scheme:dark;
+}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.7}
+img{max-width:100%}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2{font-family:var(--f-display);font-weight:400;line-height:1.15;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:var(--cedar)}
+:focus-visible{outline:3px solid var(--cedar);outline-offset:3px}
+.ph{background:var(--placeholder);color:var(--placeholder-ink);padding:0 .3em;border-radius:3px;font-family:var(--f-mono);font-size:.85em}
+.mono{font-family:var(--f-mono);font-size:var(--s-1);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+
+.top{background:var(--evergreen);color:var(--on-dark)}
+.top .wrap{max-width:1080px;padding-block:1.1rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.5rem;align-items:baseline}
+.top a{color:var(--on-dark);text-decoration:none;font-family:var(--f-mono);font-size:var(--s-1);letter-spacing:.06em;text-transform:uppercase}
+.top a[aria-current]{border-bottom:2px solid var(--pasture)}
+.top nav{display:flex;gap:1.5rem}
+.brand{font-family:var(--f-display)!important;font-size:var(--s1)!important;text-transform:none!important;letter-spacing:0!important}
+
+.intro{padding-block:3.5rem 2.5rem;display:grid;gap:1rem;border-bottom:1px solid var(--line)}
+.intro h1{font-size:var(--s3)}
+.intro p{color:var(--muted);max-width:56ch}
+
+.index{padding-block:2rem;display:grid;gap:.25rem;border-bottom:1px solid var(--line)}
+.index a{display:flex;justify-content:space-between;gap:1rem;padding-block:.5rem;text-decoration:none;color:var(--ink)}
+.index a:hover span:first-child{color:var(--cedar)}
+.index time{font-family:var(--f-mono);font-size:var(--s-1);color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+
+article{padding-block:3rem;display:grid;gap:1.1rem;border-bottom:1px solid var(--line)}
+article h2{font-size:var(--s2)}
+article .meta{display:flex;flex-wrap:wrap;gap:.4rem 1rem}
+.draft{background:var(--placeholder);color:var(--placeholder-ink);font-family:var(--f-mono);font-size:var(--s-1);padding:.6rem .8rem;border-radius:3px}
+.photo{aspect-ratio:3/2;max-width:100%;border:1px dashed var(--line);border-radius:3px;display:grid;place-items:center;text-align:center;padding:1rem;font-family:var(--f-mono);font-size:var(--s-1);color:var(--muted);background:var(--surface)}
+figure{margin:0;display:grid;gap:.5rem}
+figcaption{font-size:var(--s-1);color:var(--muted)}
+
+.cta{padding-block:3rem;display:grid;gap:.75rem}
+.cta h2{font-size:var(--s2)}
+.cta a.btn{justify-self:start;background:var(--cedar);color:#fff;text-decoration:none;border-radius:3px;padding:.7rem 1.1rem;font-weight:500}
+footer{font-size:var(--s-1);color:var(--muted);padding-block:1.5rem 2.5rem}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">14350 160th Place NE</a>
+    <nav aria-label="Site">
+      <a href="index.html">The property</a>
+      <a href="journal.html" aria-current="page">Journal</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <p class="mono">Journal</p>
+    <h1>Notes from the hill</h1>
+    <p>Seasons, small projects and everyday life on two and a half acres in Woodinville, written by the people who have lived here since 2003.</p>
+  </div>
+
+  <nav class="index" aria-label="All entries">
+    <a href="#twenty-three-years"><span>Twenty-three years on Hollywood Hill</span><time datetime="2026-10-24">Oct 24, 2026</time></a>
+  </nav>
+
+  <!-- NEW POSTS: copy the <article> block below, paste it above this one, and add a line to the index. -->
+  <article id="twenty-three-years">
+    <div class="meta"><time class="mono" datetime="2026-10-24">October 24, 2026</time><span class="mono">The house</span></div>
+    <h2>Twenty-three years on Hollywood Hill</h2>
+    <p class="draft">Draft: rewrite in your own voice before publishing.</p>
+    <figure>
+      <div class="photo">Photo: the house from the pasture</div>
+      <figcaption><span class="ph">[caption]</span></figcaption>
+    </figure>
+    <p>We bought this place in June 2003. The house was built in 1976, and it still has the long rooflines and big windows that drew us to it in the first place. On a clear evening the Olympics line up across the western horizon.</p>
+    <p>Over the years we've rebuilt most of what you see: the kitchen, the deck, the roof, the floors. We put in a new septic system sized for five bedrooms. The barn and the pasture beyond it set the pace of the place, and from the house you can see neighbors' horses grazing on the next hills over.</p>
+    <p><span class="ph">[A favorite memory or two: a family gathering, a snow day, what the property was like when the boys were young.]</span></p>
+    <p>Over the coming months we'll post here about the seasons on the hill, the projects we've done, and the corners of the property that photos don't capture.</p>
+  </article>
+
+  <section class="cta">
+    <h2>Interested in seeing it?</h2>
+    <p>All showings are by appointment through our listing broker.</p>
+    <a class="btn" href="index.html#contact">Contact the broker</a>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>Information deemed reliable but not guaranteed. <span class="ph">[Brokerage name, license info, Equal Housing Opportunity]</span></p>
+</footer>
+</body>
+</html>
