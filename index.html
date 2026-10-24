@@ -116,6 +116,7 @@ section + section{border-top:1px solid var(--line)}
 .contact h2{font-size:var(--s3)}
 .contact p{color:#c9d8b8;max-width:52ch}
 .card{display:grid;gap:.3rem;font-family:var(--f-mono);font-size:var(--s-1)}
+.card a{color:inherit;text-decoration-color:var(--pasture);text-underline-offset:3px}
 .card strong{font-family:var(--f-display);font-weight:400;font-size:var(--s1);color:#fff}
 .btn{margin-top:.75rem;justify-self:start;background:var(--cedar);color:#fff;border:0;border-radius:3px;padding:.7rem 1.1rem;font:500 var(--s0) var(--f-body);cursor:pointer}
 .btn:hover{filter:brightness(1.08)}
@@ -288,9 +289,9 @@ footer .wrap{padding-block:1.75rem;display:grid;gap:.5rem}
     </div>
     <div class="card">
       <strong>Shannon Woodcock</strong>
-      <span>The Cascade Team · <span class="ph">[brokerage]</span></span>
-      <span id="phone"><span class="ph">[phone]</span></span>
-      <span id="email"><span class="ph">[email]</span></span>
+      <span>Managing Broker · The Cascade Team Real Estate</span>
+      <a id="phone" href="tel:+12064845330">(206) 484-5330</a>
+      <a id="email" href="mailto:shannon@thecascadeteam.com">shannon@thecascadeteam.com</a>
       <button class="btn" id="copy" type="button">Copy contact info</button>
     </div>
   </div>
@@ -299,13 +300,13 @@ footer .wrap{padding-block:1.75rem;display:grid;gap:.5rem}
 <footer>
   <div class="wrap">
     <p>Information deemed reliable but not guaranteed. Buyers should verify acreage, zoning, ADU eligibility and school assignment independently.</p>
-    <p><span class="ph">[Brokerage name, license info, Equal Housing Opportunity]</span></p>
+    <p>Listed by Shannon Woodcock, Managing Broker (license 26038), The Cascade Team Real Estate, 371 NE Gilman Blvd, Suite 160, Issaquah, WA 98027. Equal Housing Opportunity.</p>
   </div>
 </footer>
 
 <script>
 document.getElementById('copy').addEventListener('click', function(){
-  var b=this, t='Shannon Woodcock, The Cascade Team\n'+document.getElementById('phone').innerText+'\n'+document.getElementById('email').innerText;
+  var b=this, t='Shannon Woodcock, The Cascade Team Real Estate\n'+document.getElementById('phone').innerText+'\n'+document.getElementById('email').innerText;
   try{
     navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';},function(){b.textContent='Select and copy the details above';});
   }catch(e){b.textContent='Select and copy the details above';}
