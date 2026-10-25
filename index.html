@@ -96,7 +96,7 @@ section + section{border-top:1px solid var(--line)}
 .shot.wide{grid-column:span 2;aspect-ratio:2/1}
 .shot.wide + .shot{aspect-ratio:auto}
 .shot.has-img{position:relative;overflow:hidden;padding:0;border-style:solid}
-.shot.has-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.shot.has-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 @media (max-width:620px){.gallery{grid-template-columns:1fr 1fr}.shot.wide{grid-column:span 2;aspect-ratio:16/9}}
 
 /* Facts ledger */
@@ -228,7 +228,7 @@ footer .wrap{padding-block:1.75rem;display:grid;gap:.5rem}
     <div class="wrap stack">
       <p class="eyebrow">Photos</p>
       <div class="gallery">
-        <div class="shot wide has-img"><img src="images/front-sunset-1206.jpg" width="1206" height="1002" loading="lazy" alt="The front of the house at sunset, seen from above: pink clouds over a line of evergreens, the dark roof, a lit entry and a flagstone courtyard."></div>
+        <div class="shot wide has-img"><img src="images/living-view-2400.jpg" srcset="images/living-view-1400.jpg 1400w, images/living-view-2400.jpg 2400w" sizes="(max-width:620px) 100vw, 700px" width="2400" height="1200" loading="lazy" alt="The living room's big picture window at dusk, framing evergreens and the Olympic Mountains against a pink and blue sky."></div>
         <div class="shot">Kitchen</div>
         <div class="shot">Barn interior</div>
         <div class="shot">Pasture</div>
