@@ -74,6 +74,7 @@ article .meta{display:flex;flex-wrap:wrap;gap:.4rem 1rem}
 .draft{background:var(--placeholder);color:var(--placeholder-ink);font-family:var(--f-mono);font-size:var(--s-1);padding:.6rem .8rem;border-radius:3px}
 .photo{aspect-ratio:3/2;max-width:100%;border:1px dashed var(--line);border-radius:3px;display:grid;place-items:center;text-align:center;padding:1rem;font-family:var(--f-mono);font-size:var(--s-1);color:var(--muted);background:var(--surface)}
 figure{margin:0;display:grid;gap:.5rem}
+.photo-img{display:block;width:100%;height:auto;border-radius:3px}
 figcaption{font-size:var(--s-1);color:var(--muted)}
 
 .cta{padding-block:3rem;display:grid;gap:.75rem}
@@ -102,21 +103,20 @@ footer{font-size:var(--s-1);color:var(--muted);padding-block:1.5rem 2.5rem}
   </div>
 
   <nav class="index" aria-label="All entries">
-    <a href="#twenty-three-years"><span>Twenty-three years on Hollywood Hill</span><time datetime="2026-10-24">Oct 24, 2026</time></a>
+    <a href="#twenty-three-years"><span>Twenty-three years on Hollywood Hill</span><time datetime="2026-10-26">Oct 26, 2026</time></a>
   </nav>
 
   <!-- NEW POSTS: copy the <article> block below, paste it above this one, and add a line to the index. -->
   <article id="twenty-three-years">
-    <div class="meta"><time class="mono" datetime="2026-10-24">October 24, 2026</time><span class="mono">The house</span></div>
+    <div class="meta"><time class="mono" datetime="2026-10-26">October 26, 2026</time><span class="mono">The house</span></div>
     <h2>Twenty-three years on Hollywood Hill</h2>
-    <p class="draft">Draft: rewrite in your own voice before publishing.</p>
     <figure>
-      <div class="photo">Photo: the house from the pasture</div>
-      <figcaption><span class="ph">[caption]</span></figcaption>
+      <img class="photo-img" src="images/balloon-sunset-1600.jpg" srcset="images/balloon-sunset-800.jpg 800w, images/balloon-sunset-1600.jpg 1600w" sizes="(max-width:720px) 100vw, 688px" width="1600" height="1200" alt="A rainbow-striped hot air balloon drifting over evergreen hills at sunset, seen from our drone.">
+      <figcaption>A summer evening balloon over the hill, seen from our drone.</figcaption>
     </figure>
-    <p>We bought this place in June 2003. The house was built in 1976, and it still has the long rooflines and big windows that drew us to it in the first place. On a clear evening the Olympics line up across the western horizon.</p>
-    <p>Over the years we've rebuilt most of what you see: the kitchen, the deck, the roof, the floors. We put in a new septic system sized for five bedrooms. The barn and the pasture beyond it set the pace of the place, and from the house you can see neighbors' horses grazing on the next hills over.</p>
-    <p><span class="ph">[A favorite memory or two: a family gathering, a snow day, what the property was like when the boys were young.]</span></p>
+    <p>We bought this house in 2003 while we were driving our first son around, trying to get him to sleep as a baby. We saw the sign at the end of the driveway, got home, looked it up on the internet and realized this was a great neighborhood and piece of land to put down roots and stay for a while. I didn't think it would be 23 years!</p>
+    <p>The things that really sold us were the big sky views, the abundance of land and the ability to do what you wanted. No HOAs. Outside the city limits. Good schools. Close to work. Another child came a year later, and we made lots of friends and enjoyed our time here. But it's time to move on, and we would love for the next people to enjoy it as much as we did.</p>
+    <p>One of our favorite things to do was watch the balloons float by on lazy summer evenings. Sometimes they even landed on our field. It's one of the unique things about living on Hollywood Hill!</p>
     <p>Over the coming months we'll post here about the seasons on the hill, the projects we've done, and the corners of the property that photos don't capture.</p>
   </article>
 
