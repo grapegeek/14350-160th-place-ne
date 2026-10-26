@@ -134,6 +134,10 @@ footer .wrap{padding-block:1.75rem;display:grid;gap:.5rem}
 @media (prefers-reduced-motion:no-preference){.hero h1{animation:rise .7s ease-out both}}
 @keyframes rise{from{transform:translateY(8px);opacity:.6}to{transform:none;opacity:1}}
 
+.aerial{margin:0;display:grid;gap:.6rem}
+.aerial img{display:block;width:100%;height:auto;border-radius:3px;border:1px solid var(--line)}
+.aerial figcaption{font-size:var(--s-1);color:var(--muted)}
+.zoomable{cursor:zoom-in}
 /* Lightbox */
 .gallery img{cursor:zoom-in}
 .gallery img:focus-visible{outline:3px solid var(--cedar);outline-offset:-3px}
@@ -266,6 +270,17 @@ html:has(#lightbox[open]){overflow:hidden}
     </div>
   </section>
 
+  <section id="aerial">
+    <div class="wrap stack">
+      <p class="eyebrow">From above</p>
+      <h2 style="font-size:var(--s3)">The whole 2.3 acres at a glance.</h2>
+      <figure class="aerial">
+        <img class="zoomable" src="images/aerial-parcel-1710.jpg" srcset="images/aerial-parcel-900.jpg 900w, images/aerial-parcel-1710.jpg 1710w" sizes="(max-width:1080px) 100vw, 1048px" width="1710" height="920" loading="lazy" alt="Satellite view of the property outlined in red: the house, barn and detached garage at one end, open pasture filling the rest, and a private drive running out to 160th Place NE.">
+        <figcaption>The red line shows the approximate parcel boundary, including the private drive out to 160th Place NE. Imagery ©2026 Google.</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <section>
     <div class="wrap stack">
       <p class="eyebrow">Facts</p>
@@ -353,7 +368,7 @@ document.getElementById('copy').addEventListener('click', function(){
 (function(){
   var d=document.getElementById('lightbox');
   if(!d||typeof d.showModal!=='function') return;
-  var thumbs=[].slice.call(document.querySelectorAll('.gallery img')), i=0;
+  var thumbs=[].slice.call(document.querySelectorAll('.gallery img, img.zoomable')), i=0;
   var big=d.querySelector('figure img'), cap=d.querySelector('figcaption'), count=d.querySelector('.lb-count');
   function full(im){
     if(im.dataset.full) return im.dataset.full;
