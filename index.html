@@ -123,6 +123,11 @@ section + section{border-top:1px solid var(--line)}
 .card strong{font-family:var(--f-display);font-weight:400;font-size:var(--s1);color:#fff}
 .btn{margin-top:.75rem;justify-self:start;background:var(--cedar);color:#fff;border:0;border-radius:3px;padding:.7rem 1.1rem;font:500 var(--s0) var(--f-body);cursor:pointer}
 .btn:hover{filter:brightness(1.08)}
+.listing-links{display:flex;flex-wrap:wrap;gap:.6rem}
+.hero .listing-links{margin-top:-1.25rem}
+.card .listing-links{margin-top:.5rem}
+.pill{display:inline-flex;align-items:center;gap:.35rem;min-height:40px;padding:.45rem 1rem;border:1px solid rgba(238,242,234,.5);border-radius:999px;color:var(--on-dark);text-decoration:none;font-family:var(--f-mono);font-size:var(--s-1);letter-spacing:.04em}
+.pill:hover{background:rgba(238,242,234,.12);border-color:var(--on-dark)}
 @media (max-width:720px){.contact .wrap{grid-template-columns:1fr}}
 footer{font-size:var(--s-1);color:var(--muted)}
 footer .wrap{padding-block:1.75rem;display:grid;gap:.5rem}
@@ -168,6 +173,7 @@ html:has(#lightbox[open]){overflow:hidden}
       <div><b>1976</b>mid-century build</div>
     </div>
     <p class="price">$2,995,000 <small>NWMLS # 2583407</small></p>
+    <p class="listing-links"><a class="pill" href="https://www.redfin.com/WA/Woodinville/14350-160th-Pl-NE-98072/home/448158" target="_blank" rel="noopener">View on Redfin <span aria-hidden="true">&#8599;</span></a></p>
     <img class="hero-photo" src="images/hero-dusk-2400.jpg" srcset="images/hero-dusk-1200.jpg 1200w, images/hero-dusk-2400.jpg 2400w" sizes="(max-width:1080px) 100vw, 1048px" width="2400" height="1200" alt="The house at dusk: warm light in the big front window, a flagstone courtyard, and string lights in the trees against a blue and orange sky.">
   </div>
 </header>
@@ -324,6 +330,7 @@ html:has(#lightbox[open]){overflow:hidden}
       <a id="phone" href="tel:+12064845330">(206) 484-5330</a>
       <a id="email" href="mailto:shannon@thecascadeteam.com">shannon@thecascadeteam.com</a>
       <button class="btn" id="copy" type="button">Copy contact info</button>
+      <span class="listing-links"><a class="pill" href="https://www.redfin.com/WA/Woodinville/14350-160th-Pl-NE-98072/home/448158" target="_blank" rel="noopener">Listing on Redfin <span aria-hidden="true">&#8599;</span></a></span>
     </div>
   </div>
 </aside>
